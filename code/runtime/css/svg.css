@@ -1,0 +1,28 @@
+
+/*Main Graph div element*/
+#graph {
+	position: relative;
+	/* left: 30%; */
+	top: 13%;
+	height: 60vh;
+	width: 50vw;
+}
+
+/*Main Graph SVG*/
+#graph svg {
+	position: absolute;
+	top: 15%;
+	width: 40vw;
+	height: 60vh;
+	left: 25vw;
+	cursor: pointer;
+}
+
+/*Side SVG in demo*/
+#vizinst svg {
+	position: absolute;
+	top: 30%;
+	width: 20vw;
+	height: 70vh;
+	left: 1%;
+}

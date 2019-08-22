@@ -1,0 +1,54 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    
+    <title>DFS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./../../../docs/static/libs/vis.min.css" rel="stylesheet" type="text/css" />
+    <link href="./../css/dfs.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://exp-iiith.vlabs.ac.in/styles/common-styles.css">
+      
+  </head>
+  <body>
+    <div class="instruction-box">
+    <button class="collapsible"> Instructions </button>
+      <div class ="content">
+        <ul>
+            <li>Click on the graph to enable the border.</li>
+            <li>Click on the node which you want to select as source node of the DFS.</li>
+            <li>Click on the nodes as they would appear on performing DFS on selected source node.</li> 
+            <li>Click on <b>New Graph</b> to start over with a new graph.</li>
+            <li>Click on <b>Reset</b> to start over with the same graph.</li>
+            <li>Zoom or Adjust graph by dragging nodes according to your convenience.</li>           
+        </ul> 
+      </div>
+    </div> 
+    <center>   
+      <div id="graph"></div> 
+    </center>
+    <div id="legend" >
+          <ul class="legend">
+              <li><span class="blue"></span> : Source Node</li>
+              <li><span class="white"></span> : Unvisited Node</li>
+              <li><span class="green"></span> : Visited Node</li>
+           </ul>
+    </div>
+    <div id="comments"class="comment-box">
+      <b>Observations:</b><br>
+      <p id = "ins"> </p>
+    </div>
+    <center>
+    <div class="buttons_practice">
+      <input type="button" value="Reset" class="button-input" id="reset">
+      <input type="button" value="New graph" class="button-input" id="New_graph">
+    </div>
+    </center>
+    <script src="./../../../docs/static/libs/vis.min.js"></script>
+    <script src="./../js/Algo.js"></script> 
+    <script src="./../js/data.js"></script> 
+    <script src="./../js/dfs-pra.js"></script> 
+    <script src="http://exp-iiith.vlabs.ac.in/styles/instruction-box.js"></script>  
+  </body>
+</html>

@@ -1,0 +1,33 @@
+
+button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	/* padding: 1% 2%; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	/* margin: 4px 2px; */
+	cursor: pointer;
+	background-color: white;
+	border-radius: 2vw;
+	border-style: solid;
+	/* border-width: 1px; */
+	border-color: rgb(158, 208, 62);
+	background-color: rgb(158, 208, 62);
+	position: absolute;
+	left: 45%;
+	top: 70%;
+	height: 9vh;
+	width: 11vw;
+}
+.green {
+	border-color: rgb(158, 208, 62);
+	background-color: rgb(158, 208, 62);
+}
+.blue {
+	border-color: rgba(105, 179, 215, 1.0);
+	background-color: rgba(105, 179, 215, 1.0);
+	top: 85%;
+}

@@ -1,0 +1,74 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>DFS Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./../../static/libs/vis.min.css" rel="stylesheet" type="text/css" />
+    <link href="./../css/dfs.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://exp-iiith.vlabs.ac.in/styles/common-styles.css">
+  </head>
+  <body>
+    <div class="instruction-box">
+      <button class="collapsible">Instructions</button>
+      <div class="content">
+        <ul>
+          <li>Click on the graph to enable the border.</li>
+          <li>Click on the node which you want to select as source node of the DFS demo.</li>
+          <li>You can click on <b>Pause</b> or <b>Play</b> to do so respectively and adjust speed using the slider.</li>
+          <li>Click on <b>Next</b> to move a step forward.</li>
+          <li>Click on <b>New Graph</b> to start over with a new graph.</li>
+          <li>Click on <b>Reset</b> to start over with the same graph.</li>
+          <li>Zoom or Adjust graph by dragging nodes according to your convenience.</li>  
+        </ul>
+      </div>
+    </div>
+     
+    <div id="legend" >
+      <ul class="legend">
+        <li><span class="blue"></span> : Source Node</li>
+        <li><span class="white"></span> : Unvisited Node</li>
+        <li><span class="grey"></span> : Current Node</li>
+        <li><span class="green"></span> : Traversed Node</li>
+        <li><span class="black"></span> : Explored Node</li>
+      </ul>
+    </div>
+    <div id="legend_edge" >
+      <ul class="legend">
+        <li><span class="grey_edge"></span> : Edge not added to DFS path </li>
+        <li><span class="black_edge"></span> : Edge added to DFS path </li>
+      </ul>
+    </div>
+    
+    <center>   
+      <div id="graph"></div> 
+    </center>
+    
+    <center>
+      <div>
+        <p id="ranger">
+          Min.Speed <input type="range" min="100" max="2500" id="interval" class="slider_input" value="1500" onclick="change_interval();" onchange="change_interval();"> Max.Speed
+        </p>
+      </div>
+    </center>
+    
+    <div id="comments" class="comment-box">
+      <b>Observations:</b><br>
+      <p id="ins"> </p>
+    </div>
+    
+    <div class="buttons">
+      <input type="button" value="Reset" class="button-input" id="reset">
+      <input type="button" value="New graph" class="button-input" id="New_graph">
+      <input type="button" value="Pause" class="button-input" id="pause">
+      <input type="button" value="Start" class="button-input" id="start">
+    </div>
+    
+    <script src="./../../static/libs/vis.min.js"></script>
+    <script src="./../js/Algo.js"></script> 
+    <script src="./../js/data.js"></script> 
+    <script src="./../js/dfs-demo.js"></script> 
+    <script src="http://exp-iiith.vlabs.ac.in/styles/instruction-box.js"></script>  
+  </body>
+</html>

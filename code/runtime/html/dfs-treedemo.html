@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>DFS Tree Demo</title>
+
+    <!--css-->
+    <link href="../css/outline.css" rel="stylesheet" type="text/css" />
+    <link href="../css/svg.css" rel="stylesheet" type="text/css" />
+    <link href="../css/buttons.css" rel="stylesheet" type="text/css" />
+
+    <!--js-->
+    <script src="../../static/libs/jquery-1.10.2.js"></script>
+    <script src="../../static/libs/jquery-ui.js"></script>
+    <script src="../../static/libs/d3.v3.js"></script>
+</head>
+
+<body>
+    <div class="main_title">Depth First Search Demo - Trees</div>
+    <div class="bluebox"></div>
+    <div class="instruction_boundary" id="vl_instruction">
+        <div id="vl_text_instruction">
+            <b>Instructions:</b></br>
+            Finish theory part before watching demo.
+            <br />
+            Click the node to start DFS!
+        </div>
+    </div>
+    </div>
+
+    <div id="graph"></div>
+    <div id="vizinst"></div>
+    <button class="button" onclick="sample()">Generate Graph</button>
+    <div id="sequence">Sequence of Nodes:  </div>
+    <div id="dfs-err" class="err"></div>
+
+    <script src="../js/constant.js"></script>
+    <script src="../js/properties.js"></script>
+    <script src="../js/misc.js"></script>
+    <script src="../js/Widget.js"></script>
+    <script src="../js/GraphWidget.js"></script>
+    <script src="../js/GraphVertexWidget.js"></script>
+    <script src="../js/GraphEdgeWidget.js"></script>
+    <script src="../js/GraphTraversalWidget.js"></script>
+    <script src="../js/dfs-treedemo.js"></script>
+</body>
+</html>

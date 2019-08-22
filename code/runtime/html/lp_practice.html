@@ -1,0 +1,100 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title id="htmltitle">Linear Probing Practice</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="http://exp-iiith.vlabs.ac.in/styles/common-styles.css">
+</head>
+
+<body>
+    <div class="instruction-box">
+        <button class="collapsible"> Instructions </button>
+        <div class = "content">
+            <ul>
+                <li>Click on any operation to see a demo.</li>
+                <li>Type the number and observe how it's performed.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="thetable">
+        <div class="valuerow">
+            <p id="valuelabel">Hash Values</p>
+            <input class="values" type="text" id="0" name="zero" readonly>
+            <input class="values" type="text" id="1" name="one" readonly>
+            <input class="values" type="text" id="2" name="two" readonly>
+            <input class="values" type="text" id="3" name="three" readonly>
+            <input class="values" type="text" id="4" name="four" readonly>
+            <input class="values" type="text" id="5" name="five" readonly>
+            <input class="values" type="text" id="6" name="six" readonly>
+            <input class="values" type="text" id="7" name="seven" readonly>
+            <input class="values" type="text" id="8" name="eight" readonly>
+            <input class="values" type="text" id="9" name="nine" readonly>
+        </div>
+
+        <div class="indexrow">
+            <p id="indexlabel">Index Values</p>
+            <input class="indices" id="index0" value="0">
+            <input class="indices" id="index1" value="1">
+            <input class="indices" id="index2" value="2">
+            <input class="indices" id="index3" value="3">
+            <input class="indices" id="index4" value="4">
+            <input class="indices" id="index5" value="5">
+            <input class="indices" id="index6" value="6">
+            <input class="indices" id="index7" value="7">
+            <input class="indices" id="index8" value="8">
+            <input class="indices" id="index9" value="9">
+        </div>
+    </div>
+    <div class="practicebuttons" id="bigdiv">
+        <div class="buttons">
+            <button id="insertbutton" class="button-input" onclick="appearinsert()">Insert</button>
+            <button id="searchbutton" class="button-input" onclick="appearsearch()">Search</button>
+            <button id="removebutton" class="button-input" onclick="appearremove()">Remove</button>
+        </div>
+
+        <div class="leftdiv" id="leftinputdiv">
+            <a id="leftbutton">
+                <img anima-src="../../static/img/arrow.png" class="path76" id="img1" src="../../static/img/arrow.png">
+            </a>
+            <input type="text" id="toBeInserted" maxlength="4" autocomplete="off"
+                placeholder="Type Here" class="leftinput"></input>
+        </div>
+
+
+        <div class="middiv" id="middleinputdiv">
+            <a id="middlebutton">
+                <img anima-src=".../../static/img/arrow.png" class="path75" id="img2" src="../../static/img/arrow.png">
+            </a>
+            <input type="text" id="toBeSearched" maxlength="4" autocomplete="off"
+                placeholder="Type Here" class="middleinput"></input>
+        </div>
+
+
+        <div class="rightdiv" id="rightinputdiv">
+            <a id="rightbutton">
+                <img anima-src=".../../static/img/arrow.png" class="path761" id="img3" src="../../static/img/arrow.png">
+            </a>
+            <input type="text" id="toBeRemoved" name="nodeno" maxlength="4" autocomplete="off"
+                placeholder="Type Here" class="rightinput"></input>
+        </div>
+    </div>
+    <div id="calculationbox" class="comment-box">
+        <b>Step:</b>
+        <div id="status"></div>
+        <div id="status1"></div>
+        <div id="status2"></div>
+        <div id="status3"></div>
+    </div>
+
+    <div id="formulabox" class="comment-box">
+        <b>Formula:</b><br> hash1(key) = key % 10 <br>Linear Probing will be done using: <br>(hash1(key) + i ) % 10<br>i
+        = 0, 1, 2,....
+    </div>
+</body>
+<script src="../js/menudecider.js" type="text/javascript"></script>
+<script src="../js/practice_artefacts.js" type="text/javascript"></script>
+<script src="http://exp-iiith.vlabs.ac.in/styles/instruction-box.js"></script>
+
+</html>

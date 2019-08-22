@@ -1,0 +1,68 @@
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text { font: 12px sans-serif; }
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+#input1 {
+    padding: 10px;
+
+
+}
+#button1 {
+    background-color: #98FB98;
+    border: none;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+
+}
+
+#button2 {
+    background-color: #FAEBD7;
+    border: none;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+
+}
+
+#button3 {
+    background-color:  	#87CEFA;
+    border: none;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+
+}
+
+#button1:hover {
+    background-color: 	#32CD32
+}
+
+#button2:hover {
+    background-color: 	#F08080
+}
+
+
+#button3:hover {
+    background-color: 	#4169E1
+}
